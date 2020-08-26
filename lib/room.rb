@@ -5,7 +5,15 @@ attr_reader :category,
    def initialize(category, length, width)
      @category = category
      @area = length * width.to_i
+     @paint = nil
+   end
 
+   def is_painted?
+     if @paint == nil
+       false
+     else
+       true
+     end
    end
 
  end
