@@ -29,7 +29,14 @@ class House
     end
   end
 
+  def area
+    rooms.each do |room|
+      room.area += room.area
+    end
+  end
 
-
+  def details
+    details = Hash.new
+  end
 
 end
