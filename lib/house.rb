@@ -13,4 +13,13 @@ class House
   def add_room(room)
     rooms << room
   end
+
+  def above_market_average?
+    if price.gsub('$', '').to_i > 500000
+      true
+    else
+      false
+    end
+  end
+
 end
