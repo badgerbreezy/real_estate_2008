@@ -22,4 +22,14 @@ class House
     end
   end
 
+  def rooms_from_category(category)
+    #I want to search through the array and find the strings with the element category that I have defined
+    rooms.find_all do |room|
+      room.category == category
+    end
+  end
+
+
+
+
 end
