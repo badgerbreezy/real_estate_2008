@@ -1,7 +1,8 @@
 class House
   attr_reader :room,
               :price,
-              :address
+              :address,
+              :rooms
 
   def initialize(price, address)
     @price   = price
